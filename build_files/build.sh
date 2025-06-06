@@ -10,7 +10,13 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y tmux ibus-skk xdg-desktop-portal-kde neovim flatpak greetd dnf5-plugins google-noto-sans-cjk-fonts google-noto-color-emoji-fonts redhat-display-fonts tuigreet xdg-user-dirs libva-intel-media-driver
+
+dnf5 -y copr enable pgdev/ghostty
+dnf5 install -y ghostty
+
+dnf5 -y copr enable solopasha/hyprland
+dnf5 -y install hyprland xdg-desktop-portal-hyprland hyprpaper hyprlock hyprsysteminfo hypridle hyprpolkitagent
 
 # Use a COPR Example:
 #
@@ -22,3 +28,4 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable greetd
