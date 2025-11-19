@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux ibus-skk xdg-desktop-portal-kde neovim flatpak greetd dnf5-plugins google-noto-sans-cjk-fonts google-noto-color-emoji-fonts redhat-display-fonts tuigreet xdg-user-dirs libva-intel-media-driver
 
-dnf5 -y copr enable pgdev/ghostty
+dnf5 -y copr enable scottames/ghostty 
 dnf5 install -y ghostty
 
 dnf5 -y copr enable killcrb/ashell
