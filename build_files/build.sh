@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux ibus-skk xdg-desktop-portal-kde neovim flatpak greetd dnf5-plugins google-noto-sans-cjk-fonts google-noto-color-emoji-fonts redhat-display-fonts tuigreet xdg-user-dirs libva-intel-media-driver
+dnf5 install -y tmux ibus-skk xdg-desktop-portal-kde neovim flatpak greetd dnf5-plugins google-noto-sans-cjk-fonts google-noto-color-emoji-fonts redhat-display-fonts tuigreet xdg-user-dirs libva-intel-media-driver grim slurp
 
 dnf5 -y copr enable scottames/ghostty 
 dnf5 install -y ghostty
