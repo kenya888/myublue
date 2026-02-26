@@ -15,8 +15,8 @@ dnf5 install -y tmux ibus-skk xdg-desktop-portal-kde neovim flatpak greetd dnf5-
 dnf5 -y copr enable scottames/ghostty 
 dnf5 install -y ghostty
 
-dnf5 -y copr enable killcrb/ashell
-dnf5 install -y ashell
+#dnf5 -y copr enable killcrb/ashell
+#dnf5 install -y ashell
 
 dnf5 -y copr enable solopasha/hyprland
 dnf5 -y install hyprland xdg-desktop-portal-hyprland hyprpaper hyprlock hyprsysteminfo hypridle hyprpolkitagent
